@@ -75,7 +75,7 @@ public class DVD : Media
 
 public class CD : Media
 {
-    private string artist { get; set; }
+    protected string artist { get; set; }
     public CD()
     {
         artist = string.Empty;
@@ -93,8 +93,29 @@ public class CD : Media
         Console.WriteLine($"Artiste: {artist}");
     }
 }
-public class Tools
+
+public class Library
 {
+    private List<Media> listMedia;
+
+    public Library()
+    {
+        listMedia = new List<Media>();
+    }
+
+    public void LibrarySearch(Media mediaRef)
+    {
+        if (mediaRef != null)
+        {
+            Console.WriteLine("Média trouvé :");
+            mediaRef.AfficherInfos();
+        }
+        else
+        {
+            Console.WriteLine("Média non trouvé.");
+        }
+    }
+
     public static Media AddMedia(Media media, int nombreAjout)
     {
         media.availableNumber += nombreAjout;
@@ -111,15 +132,6 @@ public class Tools
         media.availableNumber -= nombreRetrait;
         return media;
     }
-}
-public class Library
-{
-    private List<Media> listMedia;
-
-    public Library()
-    {
-        listMedia = new List<Media>();
-    }
 
     public void DisplayMedia()
     {
@@ -131,12 +143,12 @@ public class Library
     }
 }
 
-public class monMain
+public class myMain
 {
     static void Main(string[] args)
     {
         Media monMedia = new Media("Mon Livre", 123, 5);
-        Tools.AddMedia(monMedia, 3);
+        Library.AddMedia(monMedia, 3);
         monMedia.AfficherInfos();
     }
 }
