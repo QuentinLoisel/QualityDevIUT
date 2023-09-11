@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quent\\source\\repos\\QuentinLoisel\\QualityDevIUT\\TP1-Qualité dev\\TP1-Qualité dev\\TP1-Qualité dev.csproj",
-      "projectName": "TP1-Qualité dev",
-      "projectPath": "C:\\Users\\quent\\source\\repos\\QuentinLoisel\\QualityDevIUT\\TP1-Qualité dev\\TP1-Qualité dev\\TP1-Qualité dev.csproj",
+      "projectUniqueName": "C:\\Users\\quent\\source\\repos\\QuentinLoisel\\QualityDevIUT\\TP1-Qualité dev\\TP1-Qualité dev\\QuentinLoisel TP1.csproj",
+      "projectName": "QuentinLoisel TP1",
+      "projectPath": "C:\\Users\\quent\\source\\repos\\QuentinLoisel\\QualityDevIUT\\TP1-Qualité dev\\TP1-Qualité dev\\QuentinLoisel TP1.csproj",
       "packagesPath": "C:\\Users\\quent\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\quent\\source\\repos\\QuentinLoisel\\QualityDevIUT\\TP1-Qualité dev\\TP1-Qualité dev\\obj\\",
       "projectStyle": "PackageReference",
